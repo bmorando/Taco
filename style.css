@@ -1,11 +1,14 @@
 .red, .blue, .green, .purple, .pink{
+  font-size: 43px;
   width: 50px;
   height: 50px;
   border: 1px solid black;
   display: inline-block;
 }
 .spinnercontainer{
-  width: 400px;
+  text-align: center;
+      padding: 11px;
+    width: 290px;
   height: 75px;
   border: 1px solid black;
 
