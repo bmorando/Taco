@@ -57,28 +57,65 @@ $(classColor).removeClass(classColorR)
 
 };
 //Alternating turns
-var player = 1;
+var player;
+var player1 = 1;
+var player2 = 2;
+var answerCorrect;
 
+// function gainedPoint(){
+//   this.score++
+// }
 
-function playerTurn(){
-  if(player == 1){
-    player = -1;
-  }else{
-    player = 1
+var player1 = {
+  value: 1,
+  score: 0,
+  gainedPoint: function(){
+    this.score++
+  }
+}
+var player2 = {
+  value: 2,
+  score: 0,
+  gainedPoint: function(){
+    this.score++
   }
 }
 
-var score = 0;
-function gainedPoint(){
-  score++;
-}
-function getScore(){
-return score;
+if(player == player1){
+  if(answerCorrect === true){
+    player1.gainedPoint();
+  }else{
+    player = player2
+  }
 }
 
+if(player == player2){
+  if( answerCorrect === true){
+    player2.gainedPoint();
+  }else{
+    player = player1
+  }
+}
+// function playerTurn(){
+//   if(player == player1){
+//     player = -1;
+//   }else{
+//     player = 1
+//   }
+// }
 
+// var score = 0;
+// function gainedPoint(){
+//   score++;
+// }
+// function getScore(){
+// return score;
+// }
+
+
+player = player1;
 function trivia(){
-var questions = Math.random()
+var questions = 0.038;//Math.random()
 console.log(questions)
 
 if(questions <= 0.038){
@@ -87,21 +124,43 @@ if(questions <= 0.038){
   $('.answer1').click(function() {
   $('.boxA').slideUp(2000)
     answerCorrect = false
-    score += 0
+    if(player == player1){
+        player = player2
+      console.log("player1 got it wrong", player)
+
+    }else{
+      player = player1
+    }
+
   });
 
   $('.answer2').click(function() {
   $('.boxA').slideUp(2000)
     answerCorrect = true
-    score += 1
-    getScore();
+    // gainedPoint();
+    if(player == player1){
+      player1.gainedPoint();
+      console.log("player1 gained point")
+      console.log("player1 ", player1.score)
+
+
+    }else{
+      player = player2
+      console.log("player1 changed player2")
+    }
+
   });
 
 
 $('.answer3').click(function() {
   $('.boxA').slideUp(2000)
     answerCorrect = false
-    score += 0
+    if(player == player1){
+        player = player2
+
+    }else{
+      player = player1
+    }
   });
 
 
@@ -125,8 +184,7 @@ $('.answer3').click(function() {
   $('.answer6').click(function() {
   $('.boxB').slideUp(2000)
     answerCorrect = true
-    score += 1
-    getScore();
+    playerPoint += 1
   });
 
 
@@ -136,23 +194,19 @@ $('.answer3').click(function() {
   $('.answer7').click(function() {
   $('.boxC').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
   });
 
   $('.answer8').click(function() {
   $('.boxC').slideUp(2000)
     answerCorrect = true
-    score += 1
-    getScore();
 
   });
 
   $('.answer9').click(function() {
   $('.boxC').slideUp(2000)
-
     answerCorrect = false
-    playerPoint += 0
+
 
   });
 }else if(questions <= 0.19){
@@ -161,22 +215,18 @@ $('.answer3').click(function() {
   $('.answer10').click(function() {
   $('.boxD').slideUp(2000)
     answerCorrect = true
-    score += 1
-    getScore();
 
   });
 
   $('.answer11').click(function() {
   $('.boxD').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
   });
 
   $('.answer12').click(function() {
   $('.boxD').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
     });
 
 }else if(questions <= 0.228){
@@ -185,15 +235,12 @@ $('.answer3').click(function() {
   $('.answer13').click(function() {
   $('.boxE').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
   });
 
   $('.answer14').click(function() {
   $('.boxE').slideUp(2000)
     answerCorrect = true
-    score += 1
-    getScore();
 
 
   });
@@ -201,7 +248,6 @@ $('.answer3').click(function() {
   $('.answer15').click(function() {
   $('.boxE').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -211,8 +257,6 @@ $('.answer3').click(function() {
   $('.answer16').click(function() {
   $('.boxF').slideUp(2000)
     answerCorrect = true
-    score += 1
-    getScore();
 
 
   });
@@ -220,7 +264,6 @@ $('.answer3').click(function() {
   $('.answer17').click(function() {
   $('.boxF').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -228,7 +271,6 @@ $('.answer3').click(function() {
   $('.answer18').click(function() {
   $('.boxF').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -238,8 +280,6 @@ $('.answer3').click(function() {
   $('.answer19').click(function() {
   $('.boxG').slideUp(2000)
     answerCorrect = true
-    score += 1
-    getScore();
 
 
   });
@@ -247,7 +287,6 @@ $('.answer3').click(function() {
   $('.answer20').click(function() {
   $('.boxG').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -255,7 +294,6 @@ $('.answer3').click(function() {
   $('.answer21').click(function() {
   $('.boxG').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -265,7 +303,6 @@ $('.answer3').click(function() {
   $('.answer22').click(function() {
   $('.boxH').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -273,7 +310,6 @@ $('.answer3').click(function() {
   $('.answer23').click(function() {
   $('.boxH').slideUp(2000)
     answerCorrect = true
-    playerPoint += 1
 
 
   });
@@ -281,7 +317,6 @@ $('.answer3').click(function() {
   $('.answer24').click(function() {
   $('.boxH').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -291,7 +326,6 @@ $('.answer3').click(function() {
   $('.answer25').click(function() {
   $('.boxI').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -299,7 +333,6 @@ $('.answer3').click(function() {
   $('.answer26').click(function() {
   $('.boxI').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -307,7 +340,6 @@ $('.answer3').click(function() {
   $('.answer27').click(function() {
   $('.boxI').slideUp(2000)
     answerCorrect = true
-    playerPoint += 1
 
 
   });
@@ -317,7 +349,6 @@ $('.answer3').click(function() {
   $('.answer28').click(function() {
   $('.boxJ').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -325,7 +356,6 @@ $('.answer3').click(function() {
   $('.answer29').click(function() {
   $('.boxJ').slideUp(2000)
     answerCorrect = true
-    playerPoint += 1
 
 
   });
@@ -333,7 +363,6 @@ $('.answer3').click(function() {
   $('.answer30').click(function() {
   $('.boxJ').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -343,7 +372,6 @@ $('.answer3').click(function() {
   $('.answer31').click(function() {
   $('.boxK').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -351,7 +379,6 @@ $('.answer3').click(function() {
   $('.answer32').click(function() {
   $('.boxK').slideUp(2000)
     answerCorrect = true
-    playerPoint += 1
 
 
   });
@@ -359,7 +386,6 @@ $('.answer3').click(function() {
   $('.answer33').click(function() {
   $('.boxK').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -369,7 +395,6 @@ $('.answer3').click(function() {
   $('.answer34').click(function() {
   $('.boxL').slideUp(2000)
     answerCorrect = true
-    playerPoint += 1
 
 
   });
@@ -377,7 +402,6 @@ $('.answer3').click(function() {
   $('.answer35').click(function() {
   $('.boxL').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -385,7 +409,6 @@ $('.answer3').click(function() {
   $('.answer36').click(function() {
   $('.boxL').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -395,7 +418,6 @@ $('.answer3').click(function() {
   $('.answer37').click(function() {
   $('.boxM').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -403,7 +425,6 @@ $('.answer3').click(function() {
   $('.answer38').click(function() {
   $('.boxM').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -411,7 +432,6 @@ $('.answer3').click(function() {
   $('.answer39').click(function() {
   $('.boxM').slideUp(2000)
     answerCorrect = true
-    playerPoint += 1
 
   });
 
@@ -424,21 +444,18 @@ $('.answer3').click(function() {
   $('.answer40').click(function() {
   $('.boxN').slideUp(2000)
     answerCorrect = true
-    playerPoint += 1
 
 });
 
   $('.answer41').click(function() {
   $('.boxN').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 });
 
   $('.answer42').click(function() {
   $('.boxN').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -448,20 +465,17 @@ $('.answer3').click(function() {
   $('.answer43').click(function() {
   $('.boxO').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
   $('.answer44').click(function() {
   $('.boxO').slideUp(2000)
     answerCorrect = true
-    playerPoint += 1
 
   });
   $('.answer45').click(function() {
   $('.boxO').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
@@ -471,7 +485,6 @@ $('.answer3').click(function() {
   $('.answer46').click(function() {
   $('.boxP').slideUp(2000)
     answerCorrect = false
-    playerPoint += 0
 
 
   });
