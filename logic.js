@@ -57,22 +57,59 @@ $(classColor).removeClass(classColorR)
 
 };
 
+
+
+var answerLaugh;
+
 function trivia(){
 var questions = Math.random()
 console.log(questions)
 
 if(questions <= 0.198){
-  prompt("how old are you?")
+   //answerLaugh = prompt("The average person does what thirteen times a day?")
+  $('.boxA').slideDown(2000)
+  $('.answerB').click(function() {
+  $('.boxA').slideUp(2000)
+  });
+
 }else if(questions <= 0.396){
-  prompt("your name is?")
+ // prompt("your name is?")
+  $('.boxB').slideDown(2000)
+  $('.answerC').click(function() {
+  $('.boxB').slideUp(2000)
+  });
 
 }else if(questions<= 0.594){
-  prompt("are you hungry?")
 
+
+  $('.boxC').slideDown(2000)
+  $('.answerB').click(function() {
+  $('.boxC').slideUp(2000)
+  });
+
+answer1()
 }else if(questions <= 0.792){
-  prompt("are you sure?")
+  //prompt("are you sure?")
 }else{
-  prompt("riddle")
+  //prompt("riddle")
 }
 }
+
+// function answer1() {
+// var userAnswer;
+// console.log("hi")
+
+// if(answerLaugh === "laugh"){
+// console.log("you are 21 coooooooooool")
+// }else if (answerhungry === "pizza"){
+// console.log("ewww thats gross!!!")
+// }
+// }
+
+
+//this is where i hide the question box
+$('.boxA').hide()
+//END OF CODE
+$('.boxB').hide()
+$('.boxC').hide()
 

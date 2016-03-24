@@ -28,3 +28,32 @@
 .changepink{
   background-color: pink;
 }
+
+
+
+.boxA {
+  width: 200px;
+  height: 75px;
+  border:2px solid black;
+  background-color: grey;
+  position: absolute;
+    left: 541px;
+}
+
+.boxB {
+  width: 200px;
+  height: 75px;
+  border:2px solid black;
+  background-color: grey;
+  position: absolute;
+    left: 541px;
+}
+
+.boxC {
+  width: 200px;
+  height: 75px;
+  border:2px solid black;
+  background-color: grey;
+  position: absolute;
+  left: 541px;
+}
