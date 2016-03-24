@@ -56,10 +56,26 @@ $(classColor).removeClass(classColorR)
 }, 1000);
 
 };
+//Alternating turns
+var player = 1;
 
 
+function playerTurn(){
+  if(player == 1){
+    player = -1;
+  }else{
+    player = 1
+  }
+}
 
-var answerLaugh;
+var score = 0;
+function gainedPoint(){
+  score++;
+}
+function getScore(){
+return score;
+}
+
 
 function trivia(){
 var questions = Math.random()
@@ -68,160 +84,651 @@ console.log(questions)
 if(questions <= 0.038){
    //answerLaugh = prompt("The average person does what thirteen times a day?")
   $('.boxA').slideDown(2000)
-  $('.answerB').click(function() {
+  $('.answer1').click(function() {
   $('.boxA').slideUp(2000)
+    answerCorrect = false
+    score += 0
   });
 
-}else if(questions <= 0.076){
- // prompt("your name is?")
-  $('.boxB').slideDown(2000)
-  $('.answerC').click(function() {
-  $('.boxB').slideUp(2000)
+  $('.answer2').click(function() {
+  $('.boxA').slideUp(2000)
+    answerCorrect = true
+    score += 1
+    getScore();
   });
+
+
+$('.answer3').click(function() {
+  $('.boxA').slideUp(2000)
+    answerCorrect = false
+    score += 0
+  });
+
+
+}else if(questions <= 0.076){
+
+  $('.boxB').slideDown(2000)
+  $('.answer4').click(function() {
+  $('.boxB').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+  });
+
+  $('.answer5').click(function() {
+  $('.boxB').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+  });
+
+
+  $('.answer6').click(function() {
+  $('.boxB').slideUp(2000)
+    answerCorrect = true
+    score += 1
+    getScore();
+  });
+
 
 }else if(questions<= 0.114){
 
   $('.boxC').slideDown(2000)
-  $('.answerB').click(function() {
+  $('.answer7').click(function() {
   $('.boxC').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+  });
+
+  $('.answer8').click(function() {
+  $('.boxC').slideUp(2000)
+    answerCorrect = true
+    score += 1
+    getScore();
+
+  });
+
+  $('.answer9').click(function() {
+  $('.boxC').slideUp(2000)
+
+    answerCorrect = false
+    playerPoint += 0
+
   });
 }else if(questions <= 0.19){
 
   $('.boxD').slideDown(2000)
-  $('.answerA').click(function() {
+  $('.answer10').click(function() {
   $('.boxD').slideUp(2000)
+    answerCorrect = true
+    score += 1
+    getScore();
+
   });
+
+  $('.answer11').click(function() {
+  $('.boxD').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+  });
+
+  $('.answer12').click(function() {
+  $('.boxD').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+    });
+
 }else if(questions <= 0.228){
 
   $('.boxE').slideDown(2000)
-  $('.answerB').click(function() {
+  $('.answer13').click(function() {
   $('.boxE').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+  });
+
+  $('.answer14').click(function() {
+  $('.boxE').slideUp(2000)
+    answerCorrect = true
+    score += 1
+    getScore();
+
+
+  });
+
+  $('.answer15').click(function() {
+  $('.boxE').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.226){
 
   $('.boxF').slideDown(2000)
-  $('.answerA').click(function() {
+  $('.answer16').click(function() {
   $('.boxF').slideUp(2000)
+    answerCorrect = true
+    score += 1
+    getScore();
+
+
+  });
+
+  $('.answer17').click(function() {
+  $('.boxF').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+
+  $('.answer18').click(function() {
+  $('.boxF').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.304){
 
   $('.boxG').slideDown(2000)
-  $('.answerA').click(function() {
+  $('.answer19').click(function() {
   $('.boxG').slideUp(2000)
+    answerCorrect = true
+    score += 1
+    getScore();
+
+
+  });
+
+  $('.answer20').click(function() {
+  $('.boxG').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+
+  $('.answer21').click(function() {
+  $('.boxG').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.342){
 
   $('.boxH').slideDown(2000)
-  $('.answerB').click(function() {
+  $('.answer22').click(function() {
   $('.boxH').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+
+  $('.answer23').click(function() {
+  $('.boxH').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
+  });
+
+  $('.answer24').click(function() {
+  $('.boxH').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.38){
 
   $('.boxI').slideDown(2000)
-  $('.answerC').click(function() {
+  $('.answer25').click(function() {
   $('.boxI').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+
+  $('.answer26').click(function() {
+  $('.boxI').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+
+  $('.answer27').click(function() {
+  $('.boxI').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
   });
 }else if(questions <= 0.418){
 
   $('.boxJ').slideDown(2000)
-  $('.answerB').click(function() {
+  $('.answer28').click(function() {
   $('.boxJ').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+
+  $('.answer29').click(function() {
+  $('.boxJ').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
+  });
+
+  $('.answer30').click(function() {
+  $('.boxJ').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.456){
 
   $('.boxK').slideDown(2000)
-  $('.answerB').click(function() {
+  $('.answer31').click(function() {
   $('.boxK').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+
+  $('.answer32').click(function() {
+  $('.boxK').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
+  });
+
+  $('.answer33').click(function() {
+  $('.boxK').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.494){
 
   $('.boxL').slideDown(2000)
-  $('.answerA').click(function() {
+  $('.answer34').click(function() {
   $('.boxL').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
+  });
+
+  $('.answer35').click(function() {
+  $('.boxL').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+
+  $('.answer36').click(function() {
+  $('.boxL').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.532){
 
   $('.boxM').slideDown(2000)
-  $('.answerC').click(function() {
+  $('.answer37').click(function() {
   $('.boxM').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
+
+  $('.answer38').click(function() {
+  $('.boxM').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+
+  $('.answer39').click(function() {
+  $('.boxM').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+  });
+
+
+
+
 }else if(questions <= 0.57){
 
   $('.boxN').slideDown(2000)
-  $('.answerA').click(function() {
+  $('.answer40').click(function() {
   $('.boxN').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+});
+
+  $('.answer41').click(function() {
+  $('.boxN').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+});
+
+  $('.answer42').click(function() {
+  $('.boxN').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.608){
 
   $('.boxO').slideDown(2000)
-  $('.answerB').click(function() {
+  $('.answer43').click(function() {
   $('.boxO').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer44').click(function() {
+  $('.boxO').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+  });
+  $('.answer45').click(function() {
+  $('.boxO').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.646){
 
   $('.boxP').slideDown(2000)
-  $('.answerC').click(function() {
+  $('.answer46').click(function() {
   $('.boxP').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer47').click(function() {
+  $('.boxP').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer48').click(function() {
+  $('.boxP').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.684){
 
   $('.boxQ').slideDown(2000)
-  $('.answerB').click(function() {
+  $('.answer49').click(function() {
   $('.boxQ').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer50').click(function() {
+  $('.boxQ').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
+  });
+  $('.answer51').click(function() {
+  $('.boxQ').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.722){
 
   $('.boxR').slideDown(2000)
-  $('.answerB').click(function() {
+  $('.answer52').click(function() {
   $('.boxR').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
+  $('.answer53').click(function() {
+  $('.boxR').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
+  });
+  $('.answer54').click(function() {
+  $('.boxR').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+
 }else if(questions <= 0.76){
 
   $('.boxS').slideDown(2000)
-  $('.answerA').click(function() {
+  $('.answer55').click(function() {
   $('.boxS').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
+  });
+  $('.answer56').click(function() {
+  $('.boxS').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer57').click(function() {
+  $('.boxS').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.798){
 
   $('.boxT').slideDown(2000)
-  $('.answerA').click(function() {
+  $('.answer58').click(function() {
   $('.boxT').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
+  });
+  $('.answer59').click(function() {
+  $('.boxT').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer60').click(function() {
+  $('.boxT').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.836){
 
   $('.boxU').slideDown(2000)
-  $('.answerB').click(function() {
+  $('.answer61').click(function() {
   $('.boxU').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer62').click(function() {
+  $('.boxU').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
+  });
+  $('.answer63').click(function() {
+  $('.boxU').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.874){
 
   $('.boxV').slideDown(2000)
-  $('.answerC').click(function() {
+  $('.answer64').click(function() {
   $('.boxV').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer65').click(function() {
+  $('.boxV').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer66').click(function() {
+  $('.boxV').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
   });
 }else if(questions <= 0.912){
 
   $('.boxW').slideDown(2000)
-  $('.answerB').click(function() {
+  $('.answer67').click(function() {
   $('.boxW').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer68').click(function() {
+  $('.boxW').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
+  });
+  $('.answer69').click(function() {
+  $('.boxW').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 0.988){
 
   $('.boxX').slideDown(2000)
-  $('.answerC').click(function() {
+  $('.answer70').click(function() {
   $('.boxX').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer71').click(function() {
+  $('.boxX').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer72').click(function() {
+  $('.boxX').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
   });
 }else if(questions <= 1.026){
 
   $('.boxY').slideDown(2000)
-  $('.answerA').click(function() {
+  $('.answer73').click(function() {
   $('.boxY').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
+  });
+  $('.answer74').click(function() {
+  $('.boxY').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer75').click(function() {
+  $('.boxY').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }else if(questions <= 1.064){
 
   $('.boxZ').slideDown(2000)
-  $('.answerB').click(function() {
+  $('.answer76').click(function() {
   $('.boxZ').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
+  });
+  $('.answer77').click(function() {
+  $('.boxZ').slideUp(2000)
+    answerCorrect = true
+    playerPoint += 1
+
+
+  });
+  $('.answer78').click(function() {
+  $('.boxZ').slideUp(2000)
+    answerCorrect = false
+    playerPoint += 0
+
+
   });
 }
 }
