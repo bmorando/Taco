@@ -6,194 +6,239 @@
   <title>Test</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
   <link rel="stylesheet" href="">
 </head>
 <body>
 
-
+  <h1>Roulette<em> Trivia</em></h1>
   <div class="spinnercontainer">
-
     <div class="red"></div>
     <div class="blue"></div>
     <div class="green"></div>
     <div class="purple"></div>
     <div class="pink"></div>
-
-<button class="btn">Spin</button>
+    <button class="btn">Spin</button>
   </div>
 
-<div class="scoreboard"> Score Board
-<div id="player1">0</div>
-<div id="player2">0</div>
-</div>
+  <div class="scoreboard"> Score Board
+    <div id="player1"><strong>Player 1:</strong>  0</div>
+    <div id="player2"><strong>Player 2:</strong>  0</div>
+  </div>
+  <!--this is the question box but it is hidden-->
+  <div class="main-container">
+    <div id="select-answer"> SELECT YOUR ANSWER </div>
+
+    <div class="boxA question-box"> The average person does what thirteen times a day?
+      <br>
+      <button class="answer1">A. Farts</button>
+      <button class="answer2">B. Laughs</button>
+      <button class="answer3">C. Eats</button>
+    </div>
+
+    <div class="boxB question-box"> In Texas it's illegal to swear in front of a what?
+      <br>
+
+      <button class="answer4">A. Kids</button>
+      <button class="answer5">B. The Elderly</button>
+      <button class="answer6">C. Corpse</button>
+    </div>
+
+    <div class="boxC question-box"> Coprastastaphobia is the fear of what?
+      <br>
+
+      <button class="answer7">A. Clowns</button>
+      <button class="answer8">B. Constipation</button>
+      <button class="answer9">C. Corporations</button>
+    </div>
+
+    <div class="boxD question-box"> In Kansas it's illegal to eat cherry pie with what?
+      <br>
 
 
-<!--this is the question box but it is hidden-->
-<div class="boxA"> The average person does what thirteen times a day?
+      <button class="answer10">A. Ice Creamm</button>
+      <button class="answer11">B. BBQ</button>
+      <button class="answer12">C. Water</button>
+    </div>
 
-<button class="answer1">A. Farts</button>
-<button class="answer2">B. Laughs</button>
-<button class="answer3">C. Eats</button>
-</div>
-<!--END OF CODE-->
-<div class="boxB"> In Texas it's illegal to swear in front of a what?
-<button class="answer4">A. Kids</button>
-<button class="answer5">B. The Elderly</button>
-<button class="answer6">C. Corpse</button>
-</div>
+    <div class="boxE question-box"> In South Dakota it's illegal to fall down and sleep where?
+      <br>
 
-<div class="boxC"> Coprastastaphobia is the fear of what?
-<button class="answer7">A. Clowns</button>
-<button class="answer8">B. Constipation</button>
-<button class="answer9">C. Corporations</button>
-</div>
+      <button class="answer13">A. In a Church</button>
+      <button class="answer14">B. In a Cheescake Factory</button>
+      <button class="answer15">C. In a Walmart</button>
+    </div>
 
-<div class="boxD"> In Kansas it's illegal to eat cherry pie with what?
+    <div class="boxF question-box"> If you are wearing a swim suit in florida in public, what is illegal for you to do?
+      <br>
 
-<button class="answer10">A. Ice Creamm</button>
-<button class="answer11">B. BBQ</button>
-<button class="answer12">C. Water</button>
-</div>
+      <button class="answer16">A. Sing</button>
+      <button class="answer17">B. Twerk</button>
+      <button class="answer18">C. Ride a bike</button>
+    </div>
 
-<div class="boxE"> In South Dakota it's illegal to fall down and sleep where?
-<button class="answer13">A. In a Church</button>
-<button class="answer14">B. In a Cheescake Factory</button>
-<button class="answer15">C. In a Walmart</button>
-</div>
+    <div class="boxG question-box"> In Maine it is illegal to bite your what?
+      <br>
 
-<div class="boxF"> If you are wearing a swim suit in florida in public, what is illegal for you to do?
-<button class="answer16">A. Sing</button>
-<button class="answer17">B. Twerk</button>
-<button class="answer18">C. Ride a bike</button>
-</div>
+      <button class="answer19">A. Landlord</button>
+      <button class="answer20">B. Neighbor</button>
+      <button class="answer21">C. Priest</button>
+    </div>
 
-<div class="boxG"> In Maine it is illegal to bite your what?
-<button class="answer19">A. Landlord</button>
-<button class="answer20">B. Neighbor</button>
-<button class="answer21">C. Priest</button>
-</div>
+    <div class="boxH question-box"> What is Scooby short for in the name 'Scooby Doo'?
+      <br>
 
-<div class="boxH"> What is Scooby short for in the name 'Scooby Doo'?
-<button class="answer22">A. Scoobeth</button>
-<button class="answer23">B. Scoobert</button>
-<button class="answer24">C. Scooby</button>
-</div>
+      <button class="answer22">A. Scoobeth</button>
+      <button class="answer23">B. Scoobert</button>
+      <button class="answer24">C. Scooby</button>
+    </div>
 
-<div class="boxI"> What is a group of crows called?
-<button class="answer25">A. Crowies</button>
-<button class="answer26">B. Squad</button>
-<button class="answer27">C. A Murder</button>
-</div>
+    <div class="boxI question-box"> What is a group of crows called?
+      <br>
 
-<div class="boxJ"> What is a group of unicorns known as?
-<button class="answer28">A. Unis</button>
-<button class="answer29">B. A blessing</button>
-<button class="answer30">C. Possie</button>
-</div>
+      <button class="answer25">A. Crowies</button>
+      <button class="answer26">B. Squad</button>
+      <button class="answer27">C. A Murder</button>
+    </div>
 
-<div class="boxK"> What is a group of frogs known as?
-<button class="answer31">A. Tacos</button>
-<button class="answer32">B. An army</button>
-<button class="answer33">C. A herd</button>
-</div>
+    <div class="boxJ question-box"> What is a group of unicorns known as?
+      <br>
 
-<div class="boxL"> Which animal is known to kill more people than plane crashes?
-<button class="answer34">A. Donkies</button>
-<button class="answer35">B. Spiders</button>
-<button class="answer36">C. Goldfish</button>
-</div>
+      <button class="answer28">A. Unis</button>
+      <button class="answer29">B. A blessing</button>
+      <button class="answer30">C. Possie</button>
+    </div>
 
-<div class="boxM"> What is the world's most popular first name?
-<button class="answer37">A. Maria</button>
-<button class="answer38">B. Ashley</button>
-<button class="answer39">C. Muhammad.</button>
-</div>
+    <div class="boxK question-box"> What is a group of frogs known as?
+      <br>
 
-<div class="boxN"> What is "entrance" and "driveway" in Swedish?
-<button class="answer40">A. "Infart" and "Utfart."</button>
-<button class="answer41">B. "Innie" and "Outie."</button>
-<button class="answer42">C. "Un" and "Ot."</button>
-</div>
+      <button class="answer31">A. Tacos</button>
+      <button class="answer32">B. An army</button>
+      <button class="answer33">C. A herd</button>
+    </div>
 
-<div class="boxO"> What professional is the most likely to be late for an appointment?
-<button class="answer43">A. Lawyer</button>
-<button class="answer44">B. Doctor</button>
-<button class="answer45">C. Politician</button>
-</div>
+    <div class="boxL question-box"> Which animal is known to kill more people than plane crashes?
+      <br>
 
-<div class="boxP"> The state of Arizona requires registration of individuals of what type?
-<button class="answer46">A. Of extraterrestrial origin</button>
-<button class="answer47">B. Who speak Russian as their native language</button>
-<button class="answer48">C. Who are illegal drug dealers</button>
-</div>
+      <button class="answer34">A. Donkies</button>
+      <button class="answer35">B. Spiders</button>
+      <button class="answer36">C. Goldfish</button>
+    </div>
 
-<div class="boxQ"> The city council of Chico, California agreed to a new law with a fine of US$500, which made it illegal to explode what kind of device within the city limits?
-<button class="answer49">A. Hand grenade</button>
-<button class="answer50">B. Nuclear bomb</button>
-<button class="answer51">C. Fireworks</button>
-</div>
+    <div class="boxM question-box"> What is the world's most popular first name?
+      <br>
 
-<div class="boxR">  After 10 pm by law in Russia, where must the homeless go?
-<button class="answer52">A. To church</button>
-<button class="answer53">B. To their home</button>
-<button class="answer54">C. To hospital</button>
-</div>
+      <button class="answer37">A. Maria</button>
+      <button class="answer38">B. Ashley</button>
+      <button class="answer39">C. Muhammad.</button>
+    </div>
 
-<div class="boxS"> Before going into space astronauts are not permitted to eat?
-<button class="answer55">A. Beans</button>
-<button class="answer56">B. Asparagus</button>
-<button class="answer57">C. Candy</button>
-</div>
+    <div class="boxN question-box"> What is "entrance" and "driveway" in Swedish?
+      <br>
 
-<div class="boxT"> In Las Vegas it is a crime to pawn your what?
-<button class="answer58">A. Dentures</button>
-<button class="answer59">B. TV</button>
-<button class="answer60">C. Shoes</button>
-</div>
+      <button class="answer40">A. "Infart" and "Utfart."</button>
+      <button class="answer41">B. "Innie" and "Outie."</button>
+      <button class="answer42">C. "Un" and "Ot."</button>
+    </div>
 
-<div class="boxU"> Scissors were invented by who?
-<button class="answer61">A. George Washington</button>
-<button class="answer62">B. Leonardo da Vinci</button>
-<button class="answer63">C. Pablo Picasso</button>
-</div>
+    <div class="boxO question-box"> What professional is the most likely to be late for an appointment?
+      <br>
 
-<div class="boxV"> When leaving a cave bats always turn?
-<button class="answer64">A. Right</button>
-<button class="answer65">B. Up</button>
-<button class="answer66">C. Left</button>
-</div>
+      <button class="answer43">A. Lawyer</button>
+      <button class="answer44">B. Doctor</button>
+      <button class="answer45">C. Politician</button>
+    </div>
 
-<div class="boxW"> Coca-Cola was originally what color?
-<button class="answer67">A. Blue</button>
-<button class="answer68">B. Green</button>
-<button class="answer69">C. Pink</button>
-</div>
+    <div class="boxP question-box"> The state of Arizona requires registration of individuals of what type?
+      <br>
 
-<div class="boxX"> Samuel L. Jackson used to be a?
-<button class="answer70">A. Tennis Player</button>
-<button class="answer71">B. Class President</button>
-<button class="answer72">C. Cheerleader</button>
-</div>
+      <button class="answer46">A. Of extraterrestrial origin</button>
+      <button class="answer47">B. Who speak Russian as their native language</button>
+      <button class="answer48">C. Who are illegal drug dealers</button>
+    </div>
 
-<div class="boxY"> What is Triskadekaphobia?
-<button class="answer73">A. Fear of the number 13</button>
-<button class="answer74">B. Fear of Tarantulas</button>
-<button class="answer75">C. Fear of Turkies</button>
-</div>
+    <div class="boxQ question-box"> The city council of Chico, California agreed to a new law with a fine of US$500, which made it illegal to explode what kind of device within the city limits?
+      <br>
 
-<div class="boxZ"> What is the purple Teletubbies name?
-<button class="answer76">A. Dipsy </button>
-<button class="answer77">B. Tinky-Winky</button>
-<button class="answer78">C. Po-Poo</button>
-</div>
+      <button class="answer49">A. Hand grenade</button>
+      <button class="answer50">B. Nuclear bomb</button>
+      <button class="answer51">C. Fireworks</button>
+    </div>
+
+    <div class="boxR question-box">  After 10 pm by law in Russia, where must the homeless go?
+      <br>
+
+      <button class="answer52">A. To church</button>
+      <button class="answer53">B. To their home</button>
+      <button class="answer54">C. To hospital</button>
+    </div>
+
+    <div class="boxS question-box"> Before going into space astronauts are not permitted to eat?
+      <br>
+
+      <button class="answer55">A. Beans</button>
+      <button class="answer56">B. Asparagus</button>
+      <button class="answer57">C. Candy</button>
+    </div>
+
+    <div class="boxT question-box"> In Las Vegas it is a crime to pawn your what?
+      <br>
+
+      <button class="answer58">A. Dentures</button>
+      <button class="answer59">B. TV</button>
+      <button class="answer60">C. Shoes</button>
+    </div>
+
+    <div class="boxU question-box"> Scissors were invented by who?
+      <br>
+
+      <button class="answer61">A. George Washington</button>
+      <button class="answer62">B. Leonardo da Vinci</button>
+      <button class="answer63">C. Pablo Picasso</button>
+    </div>
+
+    <div class="boxV question-box"> When leaving a cave bats always turn?
+      <br>
+
+      <button class="answer64">A. Right</button>
+      <button class="answer65">B. Up</button>
+      <button class="answer66">C. Left</button>
+    </div>
+
+    <div class="boxW question-box"> Coca-Cola was originally what color?
+      <br>
+
+      <button class="answer67">A. Blue</button>
+      <button class="answer68">B. Green</button>
+      <button class="answer69">C. Pink</button>
+    </div>
+
+    <div class="boxX question-box"> Samuel L. Jackson used to be a?
+      <br>
+
+      <button class="answer70">A. Tennis Player</button>
+      <button class="answer71">B. Class President</button>
+      <button class="answer72">C. Cheerleader</button>
+    </div>
+
+    <div class="boxY question-box"> What is Triskadekaphobia?
+      <br>
+
+      <button class="answer73">A. Fear of the number 13</button>
+      <button class="answer74">B. Fear of Tarantulas</button>
+      <button class="answer75">C. Fear of Turkies</button>
+    </div>
+
+    <div class="boxZ question-box"> What is the purple Teletubbies name?
+      <br>
+
+      <button class="answer76">A. Dipsy </button>
+      <button class="answer77">B. Tinky-Winky</button>
+      <button class="answer78">C. Po-Poo</button>
+    </div>
+  </div>
 
 
 
-
-
-
-
-<script src = "logic.js"></script>
+  <script src = "logic.js"></script>
 </body>
 </html>

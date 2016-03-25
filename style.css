@@ -7,69 +7,170 @@
   position: relative;
 
 }*/
+
+
+
+body {
+  background-image: url(http://blog.overtheword.fr/wp-content/uploads/2012/07/Eiffel-Tower.jpg);
+  background-repeat: no-repeat;
+  background-size: 1218px;
+}
+h1{
+  color: black;
+  text-align: center;
+  font-size: 134px;
+  font-family: rechnung;
+}
+em{
+  font-family: park lane;
+  font-size: -webkit-xxx-large;
+}
+
+/*.play{
+height: 1271px;
+width: 2400px;
+border: 39px solid black;
+}
+.Left{
+display: inline-block;
+width: 1268px;
+height: 1272px;
+background-image: url(http://previews.123rf.com/images/vectaray/vectaray1403/vectaray140300002/26490772-Seamless-Art-Deco-Texture-Stock-Vector-pattern.jpg);
+background-size: 1428px ;
+}
+.Right{
+display: inline-block;
+width: 900px;
+height: 799px;
+
+}
+p{
+font-family: andes;
+display: inline-block;
+font-size: 115px;
+float: right;
+  cursor: pointer;
+}*/
+.scoreboard{
+  width: 339px;
+  height: 488px;
+  border: 2px dotted red;
+  margin: -74px 0px 0px 1390px;
+  color: goldenrod;
+  background-size: cover;
+  background-image: url(https://40.media.tumblr.com/78ca1ec7a26b79d943894ca166d7bd48/tumblr_nzvzuw5exG1s64qv3o1_1280.jpg);
+  font-family: red moon rising;
+  font-size: 63px;
+  position: fixed;
+  text-align: center;
+}
+#player1, #player2{
+  color: black;
+  font-family: bernardo moda bold;
+  font-size: 55px;
+  text-align: center;
+}
 .red, .blue, .green, .purple, .pink{
   font-size: 43px;
-  width: 109px;
-  height: 106px;
+  width: 205px;
+  height: 209px;
   border-radius: 100%;
   border: 1px solid black;
   display: inline-block;
-  /*background-image: url(https://45.media.tumblr.com/e49aa84aaa7f8458a145f80223401076/tumblr_nuhhflBSrf1txeruoo2_r2_500.gif);*/
+  /*background-image: url(http://a1794.phobos.apple.com/us/r30/Purple4/v4/d2/ab/c3/d2abc36b-c805-c31a-96d0-62f027cc6453/mzl.vdlvkrde.png);*/
   /*background-size: cover;*/
 }
 .spinnercontainer{
   text-align: center;
   padding: 11px;
-  width: 574px;
-  height: 147px;
-  border: 1px solid white;
+  width: 1102px;
+  height: 270px;
+  border: 5px dotted gold;
   margin: auto;
 }
-.scoreboard{
-  width:100px;
-  height:100px;
-  border: 1px solid black;
 
+.btn{
+  font-size: 40px;
+  color: red;
+  font-family: bernardo moda bold;
+  background-image: url(https://49.media.tumblr.com/ee66ec484de94f4ebf77e610118444c2/tumblr_o0k53339A31qzbj7zo1_500.gif);
 }
 .changered{
-  background-color: red;
+  /*background-color: red;*/
+  background-image: url(http://a1794.phobos.apple.com/us/r30/Purple4/v4/d2/ab/c3/d2abc36b-c805-c31a-96d0-62f027cc6453/mzl.vdlvkrde.png);
+  background-size: cover;
 }
 .changeblue{
-  background-color: blue;
+  /*background-color: blue;*/
+  background-image: url(http://www.phpclasses.org/browse/view/flash/file/59835/name/lemon.png);
+  background-size: cover;
 }
 .changegreen{
-  background-color: green;
+  /*background-color: green;*/
+  background-image: url(http://www.freeslotmachines.me.uk/wp-content/uploads/Bell.png);
+  background-size: cover;
 }
 .changepurple{
-  background-color: purple;
+  /*background-color: purple;*/
+  background-image: url(http://slotsmachinegame.com/wp-content/uploads/2014/12/slot-symbols2.png);
+  background-size: cover;
+
 }
 .changepink{
-  background-color: pink;
+  /*background-color: pink;*/
+  background-image: url(http://image005.flaticon.com/1/png/512/37/37445.png);
+  background-size: cover;
 }
 
+#select-answer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
 
+.main-container {
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.question-box {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 200px;
+  text-align: center;
+}
+
+.question-box button {
+  background-color: pink;
+  font-family: bernardo moda bold;
+  font-size: smaller;
+}
 
 .boxA, .boxB, .boxC, .boxD, .boxE, .boxF, .boxG, .boxH, .boxI {
-  width: 200px;
-  height: 100px;
-  border:2px solid black;
-  background-color: grey;
+  border: 53px double black;
   left: 541px;
+  text-align: center;
+  font-size: xx-large;
+  background-image: url(https://49.media.tumblr.com/d2b1cf60ab68a2f3e6f65842ecbba627/tumblr_nlb0ea0XiZ1tlvj1zo1_500.gif);
 }
 
 
 .boxJ, .boxK, .boxL, .boxM, .boxN, .boxO, .boxP, .boxQ, .boxR {
-  width: 200px;
-  height: 100px;
-  border:2px solid black;
-  background-color: grey;
+  border: 53px double black;
   left: 541px;
+  text-align: center;
+  font-size: xx-large;
+  background-image: url(https://49.media.tumblr.com/d2b1cf60ab68a2f3e6f65842ecbba627/tumblr_nlb0ea0XiZ1tlvj1zo1_500.gif);
 }
 
 .boxS, .boxT, .boxU, .boxV, .boxW, .boxX, .boxY, .boxZ {
-  width: 200px;
-  height: 100px;
-  border:2px solid black;
-  background-color: grey;
+  border: 53px double black;
   left: 541px;
+  text-align: center;
+  font-size: xx-large;
+  background-image: url(https://49.media.tumblr.com/d2b1cf60ab68a2f3e6f65842ecbba627/tumblr_nlb0ea0XiZ1tlvj1zo1_500.gif);
 }
+
