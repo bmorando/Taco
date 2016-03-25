@@ -1195,9 +1195,9 @@ if(questions <= 0.038){
 }
 
 function winner(){
-  if(player1.score == 2){
+  if(player1.score == 10){
     alert("Player 1 I think I found your calling, because you won!")
-  }else if(player2.score == 20 ){
+  }else if(player2.score == 10 ){
     alert("Player 2 I think I found your calling, because you won!")
 
 
