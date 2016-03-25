@@ -1,4 +1,6 @@
 
+
+
 //this is where the spinner is
 $(".btn").click(function() {
   spinner();
@@ -61,7 +63,7 @@ setTimeout(function(){
 
 $(classColor).removeClass(classColorR)
 
-}, 1000);
+}, 3000);
 
 };
 //end of spinner
@@ -97,8 +99,12 @@ $('.answer1').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1;
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer2').click(function() {
@@ -106,11 +112,10 @@ $('.answer1').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
-      console.log("Player1 gainedPoint")
+      winner();
     }else{
        player2.gainedPoint();
-
-      console.log("Player2 gainedPoint")
+      winner();
     }
   });
   $('.answer3').click(function() {
@@ -118,8 +123,12 @@ $('.answer1').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   //<--end of A-->
@@ -128,8 +137,12 @@ $('.answer1').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer5').click(function() {
@@ -137,9 +150,13 @@ $('.answer1').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer6').click(function() {
@@ -147,10 +164,11 @@ $('.answer1').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
-      console.log("Player1 gainedPoint")
+      winner();
 
     }else{
        player2.gainedPoint();
+       winner();
 
     }
   });
@@ -160,8 +178,12 @@ $('.answer1').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer8').click(function() {
@@ -169,10 +191,11 @@ $('.answer1').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
-      console.log("Player1 gainedPoint")
+      winner();
 
     }else{
        player2.gainedPoint();
+       winner();
 
     }
 });
@@ -181,9 +204,13 @@ $('.answer1').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   //<--end of C-->
@@ -192,8 +219,10 @@ $('.answer10').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
        player2.gainedPoint();
+       winner();
     }
   });
   $('.answer11').click(function() {
@@ -201,9 +230,13 @@ $('.answer10').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer12').click(function() {
@@ -211,8 +244,12 @@ $('.answer10').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
   }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of D-->
@@ -221,8 +258,12 @@ $('.answer13').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 
@@ -231,8 +272,10 @@ $('.answer13').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
        player2.gainedPoint();
+       winner();
     }
   });
 
@@ -241,9 +284,13 @@ $('.answer13').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
 
   });
@@ -253,8 +300,10 @@ $('.answer13').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
        player2.gainedPoint();
+       winner();
     }
    });
 
@@ -263,9 +312,13 @@ $('.answer13').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer18').click(function() {
@@ -273,9 +326,13 @@ $('.answer13').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of F-->
@@ -284,8 +341,10 @@ $('.answer13').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
        player2.gainedPoint();
+       winner();
 
     }
   });
@@ -294,9 +353,13 @@ $('.answer13').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer21').click(function() {
@@ -304,9 +367,13 @@ $('.answer13').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of G-->
@@ -315,9 +382,13 @@ $('.answer13').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer23').click(function() {
@@ -325,8 +396,10 @@ $('.answer13').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
        player2.gainedPoint();
+       winner();
     }
   });
   $('.answer24').click(function() {
@@ -334,8 +407,12 @@ $('.answer13').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of H-->
@@ -344,9 +421,13 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer26').click(function() {
@@ -354,9 +435,13 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
     });
 
@@ -365,8 +450,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
        player2.gainedPoint();
+       winner();
     }
   });
 //<--end of I-->
@@ -375,8 +462,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer29').click(function() {
@@ -384,8 +475,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
        player2.gainedPoint();
+       winner();
     }
   });
   $('.answer30').click(function() {
@@ -393,8 +486,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of J-->
@@ -403,8 +500,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer32').click(function() {
@@ -412,8 +513,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
        player2.gainedPoint();
+       winner();
     }
   });
   $('.answer33').click(function() {
@@ -421,9 +524,13 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of K-->
@@ -432,8 +539,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
        player2.gainedPoint();
+       winner();
     }
     });
   $('.answer35').click(function() {
@@ -441,8 +550,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer36').click(function() {
@@ -450,9 +563,13 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of L-->
@@ -461,8 +578,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
 });
   $('.answer38').click(function() {
@@ -470,8 +591,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer39').click(function() {
@@ -479,8 +604,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
 
@@ -490,8 +617,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
   $('.answer41').click(function() {
@@ -499,17 +628,25 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   $('.answer42').click(function() {
   $('.boxN').slideUp(2000)
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
 
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 });
@@ -519,8 +656,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer44').click(function() {
@@ -528,8 +669,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
   $('.answer45').click(function() {
@@ -537,8 +680,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of O-->
@@ -547,8 +694,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer47').click(function() {
@@ -556,8 +707,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer48').click(function() {
@@ -565,8 +720,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint()
+      winner();
     }
   });
 //<--end of P-->
@@ -575,8 +732,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer50').click(function() {
@@ -584,8 +745,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
   $('.answer51').click(function() {
@@ -593,8 +756,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of Q-->
@@ -603,8 +770,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer53').click(function() {
@@ -612,8 +783,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
   $('.answer54').click(function() {
@@ -621,8 +794,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   //<--end of R-->
@@ -631,8 +808,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
   $('.answer56').click(function() {
@@ -640,8 +819,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer57').click(function() {
@@ -649,8 +832,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of S-->
@@ -659,8 +846,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
   $('.answer59').click(function() {
@@ -668,8 +857,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer60').click(function() {
@@ -677,8 +870,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of T-->
@@ -687,8 +884,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer62').click(function() {
@@ -696,8 +897,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
   $('.answer63').click(function() {
@@ -705,8 +908,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of U-->
@@ -715,8 +922,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer65').click(function() {
@@ -724,8 +935,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer66').click(function() {
@@ -733,8 +948,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
 //<--end of V-->
@@ -743,8 +960,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer68').click(function() {
@@ -752,8 +973,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
   $('.answer69').click(function() {
@@ -761,8 +984,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of W-->
@@ -771,8 +998,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer71').click(function() {
@@ -780,8 +1011,12 @@ $('.answer25').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer72').click(function() {
@@ -789,8 +1024,10 @@ $('.answer25').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
 //<--end of X-->
@@ -799,8 +1036,10 @@ $('.answer73').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
   $('.answer74').click(function() {
@@ -808,8 +1047,12 @@ $('.answer73').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer75').click(function() {
@@ -817,8 +1060,12 @@ $('.answer73').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 //<--end of Y-->
@@ -827,8 +1074,12 @@ $('.answer73').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
   $('.answer77').click(function() {
@@ -836,8 +1087,10 @@ $('.answer73').click(function() {
     answerCorrect = true
     if(player == player1){
       player1.gainedPoint();
+      winner();
     }else{
       player2.gainedPoint();
+      winner();
     }
   });
   $('.answer78').click(function() {
@@ -845,8 +1098,12 @@ $('.answer73').click(function() {
     answerCorrect = false
     if(player == player1){
         player = player2
+      alert("That was wrong, next player is up!")
+
     }else{
       player = player1
+      alert("That was wrong, next player is up!")
+
     }
   });
 
@@ -935,6 +1192,16 @@ if(questions <= 0.038){
 }else if(questions <= 1.064){
   $('.boxZ').slideDown(2000)
 }
+}
+
+function winner(){
+  if(player1.score == 2){
+    alert("Player 1 I think I found your calling, because you won!")
+  }else if(player2.score == 20 ){
+    alert("Player 2 I think I found your calling, because you won!")
+
+
+  }
 }
 
 //this is where i hide the question box
